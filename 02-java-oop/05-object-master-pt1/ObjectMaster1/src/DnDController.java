@@ -13,6 +13,7 @@ public class DnDController {
 		wiz.heal(nin);
 		sam.deathBlow(nin);
 		sam.meditate();
+		sam.howMany();
 	}
 
 }
