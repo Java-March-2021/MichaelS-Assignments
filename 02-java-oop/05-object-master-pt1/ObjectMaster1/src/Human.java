@@ -4,12 +4,14 @@ public class Human {
 	protected int stealth;
 	protected int intelligence;
 	protected int health;
+	protected String name;
 	
-	public Human(int strength, int stealth, int intelligence, int health) {
+	public Human(int strength, int stealth, int intelligence, int health, String name) {
 		this.strength = strength;
 		this.stealth = stealth;
 		this.intelligence = intelligence;
 		this.health = health;
+		this.name = name;
 	}
 
 	public int getStrength() {
@@ -42,6 +44,14 @@ public class Human {
 
 	public void setHealth(int health) {
 		this.health = health;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public void attack(Human target) {
